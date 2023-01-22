@@ -1,2 +1,12 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="split left">
+
+  <div class="centered">
+    <%= link_to raw("<h2> Pracownik </h2>"), worker_path, :style=>"text-decoration:none; color: inherit" %>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <%= link_to raw("<h2> Klient </h2>"), client_path, :style=>"text-decoration:none; color: inherit" %>
+  </div>
+</div>
