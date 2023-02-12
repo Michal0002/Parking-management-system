@@ -4,8 +4,13 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     overflow: hidden;
-
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
+
+/* index */
 .split {
     border: none;
     background-image: url("index-background.jpg");
@@ -44,3 +49,43 @@ body {
     text-decoration: none;
     color: inherit;
   }
+
+  /* end of index */
+  /* worker view */
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .actions {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .action-link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    transition: background-color 0.5s ease;
+
+    margin: 10px;
+  }
+  .action-link:hover {
+    background-color: lightgray;
+    color: black;
+  }
+  @media (max-width: 767px) {
+    .action-link {
+      font-size: 30px;
+    }
+  }
+  /* end of worker view */
+  /* client view */
+
+  /* end of client view */
